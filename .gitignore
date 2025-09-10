@@ -1,0 +1,7 @@
+tags
+*.swp
+*.swo
+.session/
+.cache/
+*.bak
+parser
