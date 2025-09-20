@@ -29,3 +29,6 @@ require("lazy").setup({
 pcall(vim.cmd, "colorscheme tokyonight")
 
 vim.o.tagfunc = ""
+
+-- 5) window clipboard 연동
+vim.opt.clipboard = "unnamedplus"

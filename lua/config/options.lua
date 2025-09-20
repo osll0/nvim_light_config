@@ -27,6 +27,3 @@ vim.opt.listchars = {
 	precedes = "❮", -- 왼쪽으로 넘어간 부분
 	nbsp = "␣", -- 특수 공백(non-break space)
 }
-
--- 클립보드
-vim.opt.clipboard = "unnamedplus" -- 시스템 클립보드 연동
