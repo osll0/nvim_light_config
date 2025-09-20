@@ -2,6 +2,12 @@ local map, opts = vim.keymap.set, { noremap = true, silent = true }
 map("n", "<leader>q", "<cmd>q<cr>", opts)
 map("n", "<leader>w", "<cmd>w<cr>", opts)
 map("n", "<leader>e", "<cmd>edit %<cr>", opts)
+
+map("n", "<leader>bd", "<cmd>bdelete<cr>", opts)
+map("n", "<leader>bo", "<cmd>%bd|e#|bd#<cr>", opts)
+map("n", "<leader>bn", "<cmd>bnext<cr>", opts)
+map("n", "<leader>bp", "<cmd>bprevious<cr>", opts)
+
 -- LSP 공통
 map("n", "gd", vim.lsp.buf.definition, opts)
 map("n", "K", vim.lsp.buf.hover, opts)
@@ -16,4 +22,5 @@ map("n", "<leader>Q", vim.diagnostic.setloclist, opts) -- 전체 에러 목록 �
 
 map("n", "<leader>f", function()
 	vim.lsp.buf.format({ async = true })
+
 end, opts)
